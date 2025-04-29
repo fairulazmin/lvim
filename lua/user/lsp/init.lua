@@ -36,6 +36,11 @@ require("typescript").setup {
   },
 }
 
+local lsp_manager = require("lvim.lsp.manager")
+lsp_manager.setup("tailwindcss", {
+  filetypes = { "html", "css", "scss", "javascript", "typescript", "javascriptreact", "typescriptreact", "vue", "svelte" },
+})
+
 local formatters = require "lvim.lsp.null-ls.formatters"
 formatters.setup {
   { command = "stylua",   filetypes = { "lua" } },

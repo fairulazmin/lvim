@@ -12,9 +12,19 @@
 -- end
 
 lvim.builtin.treesitter.ensure_installed = {
+  "html",
   "java",
   "python",
   "javascript",
+  "typescript",
+  "tsx",
+  "xml",
+  "vue",
+  "svelte"
+}
+
+lvim.builtin.treesitter.autotag = {
+  enable = true
 }
 
 lvim.builtin.treesitter.rainbow = {
@@ -36,6 +46,7 @@ lvim.builtin.treesitter.rainbow = {
 }
 
 lvim.builtin.treesitter.auto_install = false
+
 
 -- lvim.builtin.treesitter.ignore_install = { "markdown" }
 
@@ -95,4 +106,3 @@ npairs.add_rules({
   Rule("$", "$", "lua")
       :with_pair(ts_conds.is_not_ts_node({ 'function' }))
 })
-
