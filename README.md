@@ -156,7 +156,7 @@ node -v
 
 ## Install [Npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 ```
-npm install -g npm
+sudo npm install -g npm
 ```
 
 ## Install Neovim
@@ -183,11 +183,27 @@ Install `ripgrep` for Telescope to work:
 sudo apt install ripgrep
 ```
 
-Run `nvim`
+Install [Rust](https://rust-lang.org/tools/install/) and restart terminal:
 
-run `:PackerInstall`
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+sudo apt update
+sudo apt install build-essential
+sudo apt install gcc g++ make
+```
 
-run `:PackerUpdate`
+Install [Lvim](https://www.lunarvim.org/docs/installation):
+```
+bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+```
+
+Add `lvim` to PATH
+```
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+Run `lvim`
 
 run `:Mason` and install
 ```
