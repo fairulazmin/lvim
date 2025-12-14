@@ -183,6 +183,13 @@ Install `ripgrep` for Telescope to work:
 sudo apt install ripgrep
 ```
 
+Install `pnpm`:
+
+```
+pnpm setup
+source /home/fairulazmin/.zshrc
+```
+
 Install [Rust](https://rust-lang.org/tools/install/) and restart terminal:
 
 ```
