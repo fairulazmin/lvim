@@ -224,12 +224,18 @@ run `:Mason` and install
 autopep8
 bash-language-server
 css-lsp
+emmet-ls
 html-lsp
 json-lsp
+lemminx
+lua-language-server
+marksman
 prettier
+prisma-language-server
 pyright
 tailwindcss-language-server
 typescript-language-server
+vim-language-server
 yaml-language server
 ```
 
