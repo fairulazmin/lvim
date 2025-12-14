@@ -187,7 +187,7 @@ Install `pnpm`:
 
 ```
 pnpm setup
-source /home/fairulazmin/.zshrc
+source ~/.zshrc
 ```
 
 Install [Rust](https://rust-lang.org/tools/install/) and restart terminal:
@@ -197,6 +197,13 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 sudo apt update
 sudo apt install build-essential
 sudo apt install gcc g++ make
+```
+
+Add `cargo` path:
+
+```
+echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
 ```
 
 Install [Lvim](https://www.lunarvim.org/docs/installation):
