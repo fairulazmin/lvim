@@ -44,5 +44,14 @@ vim.opt.formatoptions:remove({ "c", "r", "o" }) -- This is a sequence of letters
 vim.opt.linebreak = true
 vim.opt.showbreak = '↳ '
 lvim.format_on_save.enabled = true
-lvim.builtin.treesitter.autotag.enable = true
-lvim.builtin.treesitter.autotag.enable_close_on_slash = true
+
+-- Example configuration in init.lua for nvim-ts-autotag
+require('nvim-ts-autotag').setup({
+  opts = {
+    enable_close = true,      -- Auto close tags
+    enable_rename = true,     -- Auto rename pairs of tags
+  }
+})
+
+-- lvim.builtin.treesitter.autotag.enable = true
+-- lvim.builtin.treesitter.autotag.enable_close_on_slash = true
