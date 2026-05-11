@@ -1,7 +1,12 @@
 lvim.plugins = {
   { "tpope/vim-surround" },
   { "mg979/vim-visual-multi" },
-  { "windwp/nvim-ts-autotag" },
+  {
+    "windwp/nvim-ts-autotag",
+    config = function()
+      require("nvim-ts-autotag").setup()
+    end,
+  },
   { "JoosepAlviste/nvim-ts-context-commentstring" },
   { "windwp/nvim-autopairs" },
   { "nvim-lua/plenary.nvim" },
