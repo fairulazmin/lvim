@@ -95,7 +95,7 @@ M.config = function()
       max_prefix_length = 15, -- prefix used when a buffer is de-duplicated
       truncate_names = true,  -- whether or not tab names should be truncated
       tab_size = 18,
-      diagnostics = "nvim_lsp",
+      diagnostics = "false",
       diagnostics_update_in_insert = false,
       diagnostics_indicator = diagnostics_indicator,
       -- NOTE: this will be called a lot so don't do any heavy processing here

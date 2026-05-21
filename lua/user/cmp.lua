@@ -26,7 +26,7 @@ lvim.builtin.cmp.sources[2].entry_filter = function(entry, ctx)
     return false
   end
 
-  if kind == "Text" and not ctx.prev_context.filetype == "markdown" then
+  if kind == "Text" and ctx.prev_context.filetype ~= "markdown" then
     return false
   end
 

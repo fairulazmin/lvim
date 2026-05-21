@@ -1,7 +1,6 @@
 reload "user.options"
 reload "user.keymaps"
 reload "user.telescope"
-reload "user.lsp"
 reload "user.whichkey"
 reload "user.plugins"
 reload "user.autocommands"
