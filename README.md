@@ -156,7 +156,8 @@ node -v
 
 ## Install [Npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 ```
-sudo npm install -g npm
+sudo apt update
+sudo apt install nodejs npm
 ```
 
 ## Install Neovim
