@@ -187,7 +187,7 @@ sudo apt install ripgrep
 Install `pnpm`:
 
 ```
-pnpm setup
+npm install -g pnpm
 source ~/.zshrc
 ```
 
